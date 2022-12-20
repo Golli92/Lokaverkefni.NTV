@@ -1,5 +1,20 @@
-//Byrjunar Herbergi
-chamber/darkroom  = room0;
+class Story {
+
+  List<Story> roomData = [
+    Room(
+        Description; 'you start waking up and find yourself alone in a dark room.\n '
+    ' only small light from old and broken chandelier lihgt up the room.\n'
+    'you look around and see some old cabinets and desk.\n'
+
+    int Number = 0;
+    String name = 'Small storage';
+      //choice1: leita í herberginu
+      //choice2: fara í annað herbergi
+      //String items = [Flashlight, small key];
+    )
+  ]
+}//Byrjunar Herbergi
+chamber/storage  = room0;
 ('you start waking up and find yourself alone in a dark room.\n '
 ' only small light from old and broken chandelier lihgt up the room.\n'
 'you look around and see some old cabinets and desk.\n')

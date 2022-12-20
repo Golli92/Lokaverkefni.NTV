@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
-
-import '../functions/Startgame.dart';
+import '../functions/game_brain.dart';
 
 void main (){
   print('Hello there do you like to play a short game? \n Yes\n No');
