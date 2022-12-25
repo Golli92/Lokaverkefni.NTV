@@ -4,11 +4,12 @@ import 'dart:io';
 import 'dart:convert';
 import 'rooms.dart';
 
-void startGame(){
+void Game(){
 
   Player Avatar = new Player();
   List<Room> ListOfRooms = new List<Room>();
-  var room1 = new Room{
+  Room currentRoom = new currentRoom;
+  var room1 = new List<Room>{
     Number = 1;
     name = 'Storage room';
     Description = 'you start waking up and find yourself alone in a dark room.\n '
@@ -30,4 +31,7 @@ void startGame(){
   ListOfRooms.add(room1);
   ListOfRooms.add(room2);
   ListOfRooms.add(room3);
+}
+class CurrentRoom {
+
 }
