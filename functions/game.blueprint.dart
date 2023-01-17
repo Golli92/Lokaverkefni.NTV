@@ -40,7 +40,7 @@ items = gallon of water, gallon of milk and gallon of soda;
 Libery = room3
 ('you walk in and see big sky window where the moonlight hit you and light the room up.\n'
 'bookshelves cover every wall filled with old books and dust. In the middle of the room is some old showcases\n.'
-lookaround = ('you see one of the showcases is open and inside are two knifes')
+lookaround = ('you see one of the showcases is open and inside are two knifes and one gun')
 // leikmaður velja look around, eða nýtt herbergi = herbergin koma upp aftur
 wich will you take
 items = medium ish hunting knife, big hunting knife

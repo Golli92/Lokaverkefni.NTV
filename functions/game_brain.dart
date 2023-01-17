@@ -6,41 +6,50 @@ import 'dart:convert';
 import 'rooms.dart';
 
 
-void Game(){
+List<Room> getRooms(){
 
   Player Avatar = new Player();
   List<Room> ListOfRooms = new List<Room>();
   var currentRoom = Avatar.currentRoom;
-  var room1 = new Room(
-    'you start waking up and find yourself alone in a dark room.\n '
-    ' only small light from old and broken chandelier lihgt up the room.\n'
-    'you look around and see some old cabinets and desk.\n',
-    1,
-    'Storage Room',
-    'items'
+  Room room4 = new Room(
+    'there is massive bed in the middle of the room and pentagon carved in the selling above it and some satanic symbols all over the walls\n'
+    'the room gives you bad wipe',
+    4,
+    'Bedroom',
+    'you find a Big ass key in a drawer',
   );
-  var room2 = new Room(
-    'You enter a long Hallway with xx doors\n '
+  Room room1 = new Room(
+    'you start waking up and find yourself alone in a long hallway\n'
+    'You enter a long Hallway with 4 doors\n'
     'you see that the doors are marked with old bronze labels and you look at them all.',
-    2,
+    1,
     'Hallway',
     'items',
   );
-  var room3 = new Room(
+  Room room2 = new Room(
     'you enter a typical old kitchen with dark brown wooden decor',
-    3,
+    2,
     'Kitchen',
     'items',
   );
-  var room4 = new Room(
+  Room room3 = new Room(
     'you open the door to bright foier and see',
-    4,
+    3,
     'foier',
     'items',
+  );
+  Room room5 = new Room(
+    'you walk in and see big sky window where the moonlight hit you and light the room up.\n'
+    'bookshelves cover every wall filled with old books and dust. In the middle of the room is some old showcases\n.',
+    5,
+    'Libery',
+    'gun, small knife, big knife',
   );
 
   ListOfRooms.add(room1);
   ListOfRooms.add(room2);
   ListOfRooms.add(room3);
   ListOfRooms.add(room4);
+  ListOfRooms.add(room5);
+  return ListOfRooms;
 }
