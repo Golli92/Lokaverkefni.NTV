@@ -1,11 +1,12 @@
 import '';
 
 class Room {
-  Room(this.Description, this.Number, this.name, this.items);
+  Room(this.Description, this.Number, this.name, this.items, this.locked);
 
   String Description;
   int Number;
   String name;
-  String items;
+  List<String> items;
+  bool locked;
 
 }

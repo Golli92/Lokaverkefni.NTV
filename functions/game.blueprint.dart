@@ -65,7 +65,7 @@ use item on the bathtub (if milk is used then acid will be nutrulized) = get the
 
 looby = room6
 ('the door is locked need a key')
-//ef leikmaðurinn er komin með lykillin án þess að deyja á klósetinu
+//ef leikmaðurinn er komin með lykillin án þess að deyja
 (' you open the door to bright room were a man stands wearing pig mask on\n'
 'what will you do\n')
 // attack = you will need a knife from the kitchen
