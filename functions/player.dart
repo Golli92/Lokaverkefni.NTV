@@ -1,6 +1,8 @@
+import 'rooms.dart';
+
 class Player {
   Player({this.currentRoom});
 
-  bool currentRoom;
+  Room currentRoom;
   List inventory = [];
 }
