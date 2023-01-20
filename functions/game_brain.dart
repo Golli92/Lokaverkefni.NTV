@@ -6,7 +6,7 @@ import 'dart:convert';
 import 'rooms.dart';
 
 
-List<Room> getRooms(){
+List<Room> getRooms(){ // hérna er listinn af herbergjunum búinn til. hvert herbergi er með lýsingu, númer, nafn, hluti og hvort það er lokað eða opið. Classin Room gerir það kleift.
 
   List<Room> ListOfRooms = new List<Room>();
 
