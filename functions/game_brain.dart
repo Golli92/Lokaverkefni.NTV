@@ -34,7 +34,7 @@ List<Room> getRooms(){
     false,
   );
   Room room3 = new Room(
-    'you open the door to bright room were a man stands wearing pig mask on\n'
+    'you open the door to bright room were a big man stands wearing pig mask\n'
     'what will you do\n',
     3,
     'Foier',

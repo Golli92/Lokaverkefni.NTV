@@ -24,8 +24,8 @@ void main (){
   while(needToSelectRoom) {
     for (Room room in ListOfRooms.where((element) =>
     element.Number != Avatar.currentRoom.Number)) {
-      print("Room name: " + room.name + ", room number: " +
-          room.Number.toString());
+      print("Room name: " + room.name + ",[" +
+          room.Number.toString()+']');
     }
 
     print('-----------------------------------------------------------');
@@ -77,7 +77,14 @@ void main (){
           needToSelectRoom = true;
         }
       } else {
-        print('anal');
+        print(Avatar.currentRoom.Description);
+        print('do you have weapons??\n' 'if so use one of them');
+        if(Avatar.inventory.any((item) => item == 'Gun' && item == "Small knife" && item == "Big knife"))
+          {
+            for(String item in Avatar.inventory) {
+              print(Avatar.inventory); // vill sem sagt fá hér númer fyrir bakvið hvert items
+            }
+          }
       }
     }
   }
