@@ -9,28 +9,21 @@ import 'rooms.dart';
 List<Room> getRooms(){
 
   List<Room> ListOfRooms = new List<Room>();
-  Room room4 = new Room(
-    'there is massive bed in the middle of the room and pentagon carved in the selling above it and some satanic symbols all over the walls\n'
-    'the room gives you bad wipe',
-    4,
-    'Bedroom',
-    ['key'],
-    false,
-  );
+
   Room room1 = new Room(
     'you start waking up and find yourself alone in a long hallway\n'
-    'You enter a long Hallway with 4 doors\n'
-    'you see that the doors are marked with old bronze labels and you look at them all.',
+    'You enter a long Hallway with 5 doors\n'
+    'you see that the doors are marked with old bronze labels and you look at them all and read the following.',
     1,
     'Hallway',
-    [],
+    ['super old candy'],
     false,
   );
   Room room2 = new Room(
     'you enter a typical old kitchen with dark brown wooden decor',
     2,
     'Kitchen',
-    [],
+    ["Small knife"],
     false,
   );
   Room room3 = new Room(
@@ -46,9 +39,23 @@ List<Room> getRooms(){
     'bookshelves cover every wall filled with old books and dust. In the middle of the room is some old showcases\n.',
     5,
     'Libery',
-    ["Gun", "Small knife", "Big knife"],
+    ["Gun"],
     false,
-
+  );
+  Room room4 = new Room(
+    'there is massive bed in the middle of the room and pentagon carved in the selling above it and some satanic symbols all over the walls\n'
+     'the room gives you bad wipe',
+    4,
+    'Bedroom',
+    ['key'],
+    false,
+  );
+  Room room6 = new Room(
+    'the room was filled with many old things like huge old clock, old beds and dressers. In the left corner was a stack of old moldy boxes',
+    6,
+    'Storage',
+    ["Big knife"],
+    false,
   );
 
   ListOfRooms.add(room1);
@@ -56,5 +63,6 @@ List<Room> getRooms(){
   ListOfRooms.add(room3);
   ListOfRooms.add(room4);
   ListOfRooms.add(room5);
+  ListOfRooms.add(room6);
   return ListOfRooms;
 }

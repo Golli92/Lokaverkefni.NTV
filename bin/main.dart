@@ -13,25 +13,21 @@ void main (){
 
 
   print('The game is starting');
-  print('-----------------------------------------------------------');
+  print('');
   print(ListOfRooms.first.Description);
-  print('-----------------------------------------------------------');
-
-
-  //print(ListOfRooms);
+  print('');
 
   bool needToSelectRoom = true;
   while(needToSelectRoom) {
     for (Room room in ListOfRooms.where((element) =>
     element.Number != Avatar.currentRoom.Number)) {
-      print("Room name: " + room.name + ",[" +
-          room.Number.toString()+']');
+      print("Room name: " + room.name + ",[" + room.Number.toString()+']');
     }
 
-    print('-----------------------------------------------------------');
-    print('choose a room');
+    print('\nchoose a room');
     String InputRoom = stdin.readLineSync();
-    print('you chose ' + InputRoom + ' you biaach');
+    print('you chose ' + InputRoom + ' you biaach\n');
+
 
     if (ListOfRooms.any((element) => element.Number.toString() == InputRoom)) {
       for (Room room in ListOfRooms) {
@@ -72,20 +68,78 @@ void main (){
             }
           }
           Avatar.currentRoom.items = [];
-          print('-----------------------------------------------------------');
+          print('');
 
           needToSelectRoom = true;
         }
       } else {
-        print(Avatar.currentRoom.Description);
-        print('do you have weapons??\n' 'if so use one of them');
-        if(Avatar.inventory.any((item) => item == 'Gun' && item == "Small knife" && item == "Big knife"))
-          {
-            for(String item in Avatar.inventory) {
-              print(Avatar.inventory); // vill sem sagt fá hér númer fyrir bakvið hvert items
+          print(Avatar.currentRoom.Description);
+          needToSelectRoom = false;
+          print('do you have weapons??\n');
+          if (Avatar.inventory.any((item) =>
+          item == 'Gun' || item == 'Small knife' || item == 'Big knife')) {
+            print('You have weapons');
+            for (String item in Avatar.inventory) {
+              print(item);
             }
+            print('Choose a weapon');
+            String inputWeapon = stdin.readLineSync();
+            if (inputWeapon.toLowerCase() == 'gun') {
+              print(
+                  'the weapon you selected was not found.\n select the weapon again');
+              String inputWeapon = stdin.readLineSync();
+              print('the gun doesnt seem to work\n '
+                  'it must have been tamper with\n');
+              print('He walk up to you and uses stun gun on you\n'
+                  'you find yourself tied up in the air and slowly being lowered down to acid tank');
+              print('            \n'
+                  '           _________        \n'
+                  '          |         |       \n'
+                  '          |  R I P  |       \n'
+                  '          |         |       \n'
+                  '          |         |       \n'
+                  '^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n\n');
+              needToSelectRoom = false;
+
+            } else if (inputWeapon.toLowerCase() == 'big knife') {
+              print(
+                  'the big knife folds into it self\n its just a prob not even a real knife');
+              print('He knock you out cold\n'
+                  'you find yourself tied to a chair and realise you will be tortured to death');
+              print('            \n'
+                  '           _________        \n'
+                  '          |         |       \n'
+                  '          |  R I P  |       \n'
+                  '          |         |       \n'
+                  '          |         |       \n'
+                  '^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n\n');
+              needToSelectRoom = false;
+
+            } else if (inputWeapon.toLowerCase() == 'small knife') {
+              print('you somehow manage to stab him in the eye\n'
+                  'you make a run for it and manage to run through the door to freedom');
+              print('shit my man');
+              needToSelectRoom = false;
+
+            } else {
+              print('Error try to select the weapon again.');
+
+            }
+          } else {
+            print('you have no weapons to fight the mystery man\n'
+                'he takes up his bow and start counting down from 5\'');
+            print('            \n'
+                '           _________        \n'
+                '          |         |       \n'
+                '          |  R I P  |       \n'
+                '          |         |       \n'
+                '          |         |       \n'
+                '^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n\n');
+            needToSelectRoom = false;
+
           }
+        }
       }
     }
   }
-}
+
